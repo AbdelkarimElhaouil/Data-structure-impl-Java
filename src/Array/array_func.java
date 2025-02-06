@@ -87,7 +87,7 @@ public final class array_func{
         }
 
     }
-    public static void mergeSort(int[] values, int start, int end){
+    public static <T extends Comparable<T>> void mergeSort(T[] values, int start, int end){
         int mid;
         if(start < end){
             mid = (start+end)/2; // get the middle of the array
@@ -98,16 +98,16 @@ public final class array_func{
     }
 
     //--------------------------------------------------------//
-    public static boolean binary_search(int[] arr, int val)
+    public static <T extends Comparable<T>> boolean binary_search(T[] arr, T val)
     {
         //only works with sorted arrays
         int high = arr.length - 1, low = 0;
         while (high >= low)
         {
             int mid = (high + low) / 2;
-            if (arr[mid] == val)
+            if (arr[mid].compareTo(val) == 0)
                 return true;
-            else if (arr[mid] > val)
+            else if (arr[mid].compareTo(val) > 0)
                 high = mid - 1;
             else
                 low = mid + 1;
