@@ -1,7 +1,7 @@
 package LinkedList;
 
-public class double_LinkedList {
-        private double_LLnode head;
+public class double_LinkedList<T> {
+        private double_LLnode<T> head;
         private int size = 0;
 
         public double_LinkedList()
@@ -11,27 +11,26 @@ public class double_LinkedList {
         public boolean isEmpty() {
             return head == null;
         }
-        public void addFront(String n){
+        public void addFront(T n){
             if(isEmpty()) {
-                double_LLnode newNode = new double_LLnode(n);
-                head = newNode;
+                head = new double_LLnode<>(n);
                 size++;
             }
             else {
-                double_LLnode newNode = new double_LLnode(n);
+                double_LLnode<T> newNode = new double_LLnode<T>(n);
                 newNode.next = head;
                 head.prev = newNode;
                 head = newNode;
                 size++;
             }
         }
-        public void addBack(String n){
+        public void addBack(T data){
             if(isEmpty()){
-                addFront(n);
+                addFront(data);
             }
             else{
-                double_LLnode newNode = new double_LLnode(n);
-                double_LLnode helpPtr = head;
+                double_LLnode<T> newNode = new double_LLnode<>(data);
+                double_LLnode<T> helpPtr = head;
                 while(helpPtr.next != null){
                     helpPtr = helpPtr.next;
                 }
@@ -40,14 +39,14 @@ public class double_LinkedList {
                 size++;
             }
         }
-        public void addIn(String n, int ind)
+        public void addAt(T data, int ind)
         {
             if (ind == 0){
-                addFront(n);
+                addFront(data);
             }
             else {
-                double_LLnode newNode = new double_LLnode(n);
-                double_LLnode helpPtr = head;
+                double_LLnode<T> newNode = new double_LLnode<>(data);
+                double_LLnode<T> helpPtr = head;
                 while(ind - 1 > 0){
                     helpPtr = helpPtr.next;
                     ind--;
@@ -61,9 +60,9 @@ public class double_LinkedList {
             }
         }
         public void print(){
-            double_LLnode helpPtr = head;
+            double_LLnode<T> helpPtr = head;
             while(helpPtr != null){
-                System.out.println(helpPtr.name);
+                System.out.println(helpPtr.data);
                 helpPtr = helpPtr.next;
             }
         }

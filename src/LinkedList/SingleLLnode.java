@@ -1,17 +1,17 @@
 package LinkedList;
 
-public class SingleLLnode {
-    public int id; // data part
-    public SingleLLnode next; // Link part
+public class SingleLLnode<T> {
+    public T data; // data part
+    public SingleLLnode<T> next; // Link part
 
-    public SingleLLnode(int i)
+    public SingleLLnode(T i)
     {
-        this.id = i;
+        this.data = i;
         this.next = null;
     }
-    public SingleLLnode(int i, SingleLLnode h)
+    public SingleLLnode(T i, SingleLLnode<T> l)
     {
-        this.id = i;
-        this.next = h;
+        this.data = i;
+        this.next = l;
     }
 }
