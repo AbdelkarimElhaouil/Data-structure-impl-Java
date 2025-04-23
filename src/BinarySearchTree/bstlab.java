@@ -225,7 +225,7 @@
 //    private void printNodesDes(btsNode p){
 //        if(p != null){
 //            printNodesDes(p.getRight());
-//            System.out.print(p.getData() + " ");
+//            System.out.getAll(p.getData() + " ");
 //            printNodesDes(p.getLeft());
 //        }
 //    }
@@ -237,7 +237,7 @@
 //    private void printNodesAsc(btsNode p){
 //        if(p != null){
 //            printNodesAsc(p.getLeft());
-//            System.out.print(p.getData() + " ");
+//            System.out.getAll(p.getData() + " ");
 //            printNodesAsc(p.getRight());
 //        }
 //    }

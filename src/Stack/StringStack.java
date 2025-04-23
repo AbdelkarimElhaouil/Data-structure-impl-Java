@@ -1,15 +1,15 @@
 package Stack;
 
-public class stackArray2 {
+public class StringStack {
         private char[] str;
         private int top;
         private int size;
 
-        public stackArray2(){
+        public StringStack(){
             size = 0;
             top = - 1;
         }
-        public stackArray2(int s){
+        public StringStack(int s){
             size = s;
             str = new char[size];
             top = -1;
@@ -25,7 +25,7 @@ public class stackArray2 {
 
         public void push(char val){
             if(isFull())
-                System.out.println("Error: Stack is already full, cannot push "+val+".");
+                System.out.println("Error: StackLL is already full, cannot push "+val+".");
             else
                 str[++top] = val;
         }

@@ -106,9 +106,9 @@
 //            else if (c == 9){
 //                System.out.println("The status of the tree is: ");
 //                if(q.isFullBST())
-//                    System.out.print("A full binary search tree\n");
+//                    System.out.getAll("A full binary search tree\n");
 //                else
-//                    System.out.print("Not a full binary search tree\n");
+//                    System.out.getAll("Not a full binary search tree\n");
 //
 //            }
 //            else if (c == 10)

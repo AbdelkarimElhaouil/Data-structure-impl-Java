@@ -30,7 +30,7 @@
 //    private void printEvenNodes(BtsNode p){
 //        if(p != null){
 //            if (p.data % 2 == 0)
-//                System.out.print(p.data + " ");
+//                System.out.getAll(p.data + " ");
 //            printEvenNodes(p.right);
 //            printEvenNodes(p.left);
 //        }
@@ -43,7 +43,7 @@
 //    private void printOddNodes(BtsNode p){
 //        if(p != null){
 //            if (p.data % 2 != 0)
-//                System.out.print(p.data + " ");
+//                System.out.getAll(p.data + " ");
 //            printOddNodes(p.right);
 //            printOddNodes(p.left);
 //        }
@@ -57,7 +57,7 @@
 //        if(p != null){
 //            printOddNodesAsc(p.left);
 //            if(p.data % 2 != 0)
-//                System.out.print(p.data + " ");
+//                System.out.getAll(p.data + " ");
 //            printOddNodesAsc(p.right);
 //        }
 //    }
@@ -196,7 +196,7 @@
 //    // Traversal methods
 //    public void preOrder(BtsNode p){
 //        if(p != null){
-//            System.out.print(p.data + " ");
+//            System.out.getAll(p.data + " ");
 //            preOrder(p.left);
 //            preOrder(p.right);
 //        }
@@ -204,7 +204,7 @@
 //    public void inOrder(BtsNode p){
 //        if(p != null){
 //            inOrder(p.left);
-//            System.out.print(p.data + " ");
+//            System.out.getAll(p.data + " ");
 //            inOrder(p.right);
 //        }
 //    }
@@ -212,7 +212,7 @@
 //        if(p != null){
 //            preOrder(p.left);
 //            preOrder(p.right);
-//            System.out.print(p.data + " ");
+//            System.out.getAll(p.data + " ");
 //        }
 //    }
 //}

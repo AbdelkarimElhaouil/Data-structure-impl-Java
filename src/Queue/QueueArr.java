@@ -1,10 +1,10 @@
 package Queue;
 
-public class queueArr {
+public class QueueArr {
     private int[] queue;
     private int itemsNo;
     private int front;
-    public queueArr(int s){
+    public QueueArr(int s){
         queue = new int[s];
         itemsNo = 0;
         front = 0;

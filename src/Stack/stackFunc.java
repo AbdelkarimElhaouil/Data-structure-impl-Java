@@ -16,7 +16,7 @@ public class stackFunc {
         return a;
     }
     static public String infixToPostfix(String s){
-        stackArray2 st = new stackArray2(s.length());
+        StringStack st = new StringStack(s.length());
         String postfix = "";
         for(int i = 0; i < s.length(); ++i){
             char c = s.charAt(i);
