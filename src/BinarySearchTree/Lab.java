@@ -22,7 +22,7 @@ public class Lab {
         System.out.println("|  10) quit.                                    |");
         System.out.println("|-----------------------------------------------|");
         System.out.println();
-        System.out.println(">> Please Enter Your Choice: ");
+        System.out.println(">> Please Enter Your Choice : ");
         Scanner inp = new Scanner(System.in);
         return inp.nextInt();
     }
