@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Arrays;
 
-public final class array_func{
+public final class ArrayFunctions {
     public static <T extends Comparable<T>> void selectionSort(T[] arr) {
         for (int i = 0; i < arr.length; ++i) {
             int min = i;
